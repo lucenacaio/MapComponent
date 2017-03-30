@@ -1,0 +1,28 @@
+{
+    "raio": [{
+        "nome": "500m",
+        "valor": 500
+    }, {
+        "nome": "1Km",
+        "valor": 1000
+    }, {
+        "nome": "2.5Km",
+        "valor": 2500
+    }, {
+        "nome": "5Km",
+        "valor": 5000
+    }],
+    "filtro": [{
+        "nome": "Bares",
+        "tipo": "bar"
+    }, {
+        "nome": "Hotéis",
+        "tipo": "lodging"
+    }, {
+        "nome": "Farmácias",
+        "tipo": "pharmacy"
+    }, {
+        "nome": "Restaurantes",
+        "tipo": "restaurant"
+    }]
+}

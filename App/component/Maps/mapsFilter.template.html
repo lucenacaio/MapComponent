@@ -1,0 +1,40 @@
+<link rel="stylesheet" href="{{::$ctrl.css}}">
+<script src="{{::$ctrl.config_json}}"></script>
+
+<div class="col-md-12" style="position: fixed; z-index: 1000;background-color: white; margin-bottom: 20px;">
+    <form class="form-inline">
+        <div class="form-group">
+            <label class="radio-inline" ng-repeat="raio in $ctrl.lista_raios track by $index">
+                <input type="radio" name="inlineRadioOptions" ng-model="$ctrl.raio" ng-change="$ctrl.reload()" value="{{::raio.valor}}"> {{::raio.nome}}
+            </label>
+        </div><br>
+        <div class="form-group">
+            <label class="checkbox-inline" ng-repeat="locale in $ctrl.lista_filtros track by $index">
+                <input
+                    type="checkbox"
+                    name="selecaoFiltros[]"
+                    value="{{::locale.tipo}}"
+                    ng-checked="locale.checked"
+                    ng-click="$ctrl.toggleSelection(locale)"
+                > {{::locale.nome}}
+            </label>
+        </div>
+    </form>
+
+    <div id="map"></div>
+</div>
+
+<div class="col-md-12" style="top:400px">
+    <div class="media" ng-repeat="locale in $ctrl.lista track by $index">
+        <div class="media-left media-middle">
+            <a href="#">
+                <img class="media-object" src="{{::locale.icon}}" alt="...">
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">{{::locale.name}}</h4>
+            {{::locale.vicinity}}
+        </div>
+    </div>
+
+</div>

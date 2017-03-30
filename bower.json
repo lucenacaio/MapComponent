@@ -1,0 +1,21 @@
+{
+    "name": "mapcomponent",
+    "description": "",
+    "main": "index.html",
+    "authors": [
+        "Caio Lucena Medeiros"
+    ],
+    "license": "MIT",
+    "homepage": "",
+    "ignore": [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "angular": "^1.6.3",
+        "bootstrap": "^3.3.7"
+    }
+}
